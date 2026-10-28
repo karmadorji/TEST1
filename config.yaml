@@ -1,0 +1,86 @@
+project:
+  name: smart-multimodal-recognition
+  version: "0.1.0"
+  seed: 42
+
+paths:
+  labels: data/labels.json
+  cache_dir: .cache
+  usage_dir: .usage
+  eval_results: eval/results
+
+models:
+  image:
+    default: openai/clip-vit-large-patch14
+    cpu_friendly: openai/clip-vit-base-patch32
+    alternative: google/siglip-base-patch16-224
+  audio:
+    default: laion/larger_clap_general
+    alternative: MIT/ast-finetuned-audioset-10-10-0.4593
+  speech:
+    enabled: false
+    default: openai/whisper-small
+  video:
+    frame_encoder: openai/clip-vit-large-patch14
+    frames: 8
+    pooling: mean
+
+recognition:
+  top_k: 3
+  unknown_label: other/unknown
+  uncertain_outcome: uncertain
+  prompt_aggregation: mean
+  temperature: 1.0
+
+fusion:
+  min_confidence: 0.55
+  uncertain_below: 0.58
+  weights:
+    image: 0.35
+    audio: 0.25
+    video: 0.30
+    text: 0.10
+  agreement_bonus:
+    MATCH: 0.12
+    PARTIAL: 0.05
+    CONFLICT: 0.0
+    SINGLE_MODALITY: 0.0
+    UNCERTAIN: 0.0
+
+media:
+  image:
+    min_width: 96
+    min_height: 96
+    max_side: 1600
+    blur_laplacian_variance_below: 80.0
+  audio:
+    sample_rate: 48000
+    max_seconds: 30
+    silence_rms_below: 0.001
+    low_snr_db_below: 8.0
+  video:
+    max_seconds: 30
+    frames: 8
+    dark_mean_luma_below: 35.0
+    shaky_motion_score_above: 25.0
+  text:
+    max_chars: 1000
+
+reliability:
+  request_timeout_seconds: 30
+  cooldown_seconds: 60
+  max_5xx_retries: 2
+  backoff_base_seconds: 0.5
+  rate_limit_per_minute: 30
+  daily_soft_limit: 500
+
+explanation:
+  max_words: 80
+  use_llm: false
+  template_fallback: true
+
+api:
+  max_upload_mb: 50
+  allowed_image_types: [image/jpeg, image/png, image/webp]
+  allowed_audio_types: [audio/wav, audio/mpeg, audio/mp4, audio/x-m4a, audio/flac]
+  allowed_video_types: [video/mp4, video/quicktime, video/webm]

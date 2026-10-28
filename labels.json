@@ -1,0 +1,310 @@
+[
+  {
+    "id": "person",
+    "display_name": "Person",
+    "family": "people",
+    "prompts": [
+      "a photo of a person",
+      "a human being",
+      "a person in the scene"
+    ],
+    "reference_title": "Person",
+    "kind": "label"
+  },
+  {
+    "id": "dog",
+    "display_name": "Dog",
+    "family": "animals",
+    "prompts": [
+      "a photo of a dog",
+      "a dog",
+      "a domestic canine"
+    ],
+    "reference_title": "Dog",
+    "kind": "label"
+  },
+  {
+    "id": "cat",
+    "display_name": "Cat",
+    "family": "animals",
+    "prompts": [
+      "a photo of a cat",
+      "a cat",
+      "a domestic feline"
+    ],
+    "reference_title": "Cat",
+    "kind": "label"
+  },
+  {
+    "id": "cow",
+    "display_name": "Cow",
+    "family": "animals",
+    "prompts": [
+      "a photo of a cow",
+      "a cow",
+      "cattle"
+    ],
+    "reference_title": "Cattle",
+    "kind": "label"
+  },
+  {
+    "id": "horse",
+    "display_name": "Horse",
+    "family": "animals",
+    "prompts": [
+      "a photo of a horse",
+      "a horse",
+      "an equine animal"
+    ],
+    "reference_title": "Horse",
+    "kind": "label"
+  },
+  {
+    "id": "bird",
+    "display_name": "Bird",
+    "family": "animals",
+    "prompts": [
+      "a photo of a bird",
+      "a bird",
+      "an avian animal"
+    ],
+    "reference_title": "Bird",
+    "kind": "label"
+  },
+  {
+    "id": "car",
+    "display_name": "Car",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of a car",
+      "a passenger car",
+      "an automobile"
+    ],
+    "reference_title": "Car",
+    "kind": "label"
+  },
+  {
+    "id": "bus",
+    "display_name": "Bus",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of a bus",
+      "a passenger bus",
+      "a public transport bus"
+    ],
+    "reference_title": "Bus",
+    "kind": "label"
+  },
+  {
+    "id": "truck",
+    "display_name": "Truck",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of a truck",
+      "a cargo truck",
+      "a lorry"
+    ],
+    "reference_title": "Truck",
+    "kind": "label"
+  },
+  {
+    "id": "motorcycle",
+    "display_name": "Motorcycle",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of a motorcycle",
+      "a motorbike",
+      "a motorcycle vehicle"
+    ],
+    "reference_title": "Motorcycle",
+    "kind": "label"
+  },
+  {
+    "id": "bicycle",
+    "display_name": "Bicycle",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of a bicycle",
+      "a bicycle",
+      "a pedal bike"
+    ],
+    "reference_title": "Bicycle",
+    "kind": "label"
+  },
+  {
+    "id": "airplane",
+    "display_name": "Airplane",
+    "family": "vehicles",
+    "prompts": [
+      "a photo of an airplane",
+      "an aircraft",
+      "a passenger airplane"
+    ],
+    "reference_title": "Airplane",
+    "kind": "label"
+  },
+  {
+    "id": "chair",
+    "display_name": "Chair",
+    "family": "household_objects",
+    "prompts": [
+      "a photo of a chair",
+      "a chair",
+      "a seat with a back"
+    ],
+    "reference_title": "Chair",
+    "kind": "label"
+  },
+  {
+    "id": "table",
+    "display_name": "Table",
+    "family": "household_objects",
+    "prompts": [
+      "a photo of a table",
+      "a table",
+      "a household table"
+    ],
+    "reference_title": "Table (furniture)",
+    "kind": "label"
+  },
+  {
+    "id": "bottle",
+    "display_name": "Bottle",
+    "family": "household_objects",
+    "prompts": [
+      "a photo of a bottle",
+      "a bottle",
+      "a drinking bottle"
+    ],
+    "reference_title": "Bottle",
+    "kind": "label"
+  },
+  {
+    "id": "cup",
+    "display_name": "Cup",
+    "family": "household_objects",
+    "prompts": [
+      "a photo of a cup",
+      "a drinking cup",
+      "a mug or cup"
+    ],
+    "reference_title": "Cup",
+    "kind": "label"
+  },
+  {
+    "id": "mobile_phone",
+    "display_name": "Mobile phone",
+    "family": "electronics",
+    "prompts": [
+      "a photo of a mobile phone",
+      "a smartphone",
+      "a handheld cell phone"
+    ],
+    "reference_title": "Mobile phone",
+    "kind": "label"
+  },
+  {
+    "id": "laptop",
+    "display_name": "Laptop",
+    "family": "electronics",
+    "prompts": [
+      "a photo of a laptop",
+      "a laptop computer",
+      "a notebook computer"
+    ],
+    "reference_title": "Laptop",
+    "kind": "label"
+  },
+  {
+    "id": "television",
+    "display_name": "Television",
+    "family": "electronics",
+    "prompts": [
+      "a photo of a television",
+      "a TV screen",
+      "a television set"
+    ],
+    "reference_title": "Television set",
+    "kind": "label"
+  },
+  {
+    "id": "tree",
+    "display_name": "Tree",
+    "family": "environment",
+    "prompts": [
+      "a photo of a tree",
+      "a tree outdoors",
+      "a large woody plant"
+    ],
+    "reference_title": "Tree",
+    "kind": "label"
+  },
+  {
+    "id": "building",
+    "display_name": "Building",
+    "family": "environment",
+    "prompts": [
+      "a photo of a building",
+      "a building exterior",
+      "an architectural building"
+    ],
+    "reference_title": "Building",
+    "kind": "label"
+  },
+  {
+    "id": "road",
+    "display_name": "Road",
+    "family": "environment",
+    "prompts": [
+      "a photo of a road",
+      "a roadway",
+      "a street or road"
+    ],
+    "reference_title": "Road",
+    "kind": "label"
+  },
+  {
+    "id": "indoor_scene",
+    "display_name": "Indoor scene",
+    "family": "environment",
+    "prompts": [
+      "an indoor scene",
+      "inside a room or building",
+      "an interior environment"
+    ],
+    "reference_title": "Interior design",
+    "kind": "label"
+  },
+  {
+    "id": "outdoor_scene",
+    "display_name": "Outdoor scene",
+    "family": "environment",
+    "prompts": [
+      "an outdoor scene",
+      "an exterior environment",
+      "a scene outside"
+    ],
+    "reference_title": "Outdoor recreation",
+    "kind": "label"
+  },
+  {
+    "id": "other/unknown",
+    "display_name": "Other / unknown",
+    "family": "unknown",
+    "prompts": [
+      "an unrelated object or scene",
+      "something outside the supported categories",
+      "an unknown object or environment"
+    ],
+    "reference_title": "Open-set recognition",
+    "kind": "label"
+  },
+  {
+    "id": "uncertain",
+    "display_name": "Uncertain",
+    "family": "system",
+    "prompts": [],
+    "reference_title": "Uncertainty",
+    "kind": "outcome"
+  }
+]
